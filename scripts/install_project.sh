@@ -26,7 +26,7 @@ build_problem_solver()
 build_sc_web() {
 	cd "${APP_ROOT_PATH}"/sc-web || (echo "sc-web not downloaded." && exit 1)
 	(cd scripts && .install_problem_solver_deps.sh)
-	pip3 install -r requirements.txt
+	pip3 install -r ../sc-web/requirements.txt
 	./install_interface_deps.sh
 }
 
